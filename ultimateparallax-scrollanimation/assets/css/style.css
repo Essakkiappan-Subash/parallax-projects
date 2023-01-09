@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    font-family:  monospace;
+    font-size: 16px;
+}
+
+.container{
+    width: 1336px;
+    min-height: 400px;
+    margin: 0 auto 600px auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.2);
+}
+
+header{
+    position: relative;
+    height: 500px;
+    /* overflow: hidden; */
+}
+
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .top-link{
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+.slogan{
+    position: absolute;
+    width: 40%;
+    top: 200px;
+    left: 100px;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.slogan.textanim{
+    animation: text-animation 1s;
+    /* animation-delay: 0.4s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-animation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slogan .tittle{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.slogan .sub-tittle{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.slogan .cta{
+    margin-top: 20px;
+
+}
+
+.slogan .cta button{
+    padding: 10px 20px;
+    background: #33ddb3;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.floating-box{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #33ddb320;
+    border: 10px solid #33ddb3;
+    z-index: -50;
+    border-radius: 2px;
+    box-shadow: 0 0 100px #33ddb3;
+    left: -100px;
+    transform: translateY(40px) rotate(45deg);
+}
+
+.img-box{
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    top: 140px;
+    right: -10%;
+    background: #ccc;
+    border: 10px solid #33ddb3;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0 0 0 /.6);
+    background-size: 150%;
+    background-position: center;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.img-box.animate{
+    animation: scale-down 2s;  /* forwards */
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale-down {
+    to {
+        background-size: 100%;
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+header .img-box{
+    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/TESLA%20S.jpg);
+}
+
+
+
+.steps-container{
+    height: 300px;
+    padding-top: 140px;
+}
+
+.steps{
+    padding: 0 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.steps > div{
+    width: 25%;
+    /* box-shadow: 0 0 10px #33ddb350; */
+
+}
+
+.steps .icon{
+    display: flex;
+    justify-content: center;
+}
+
+.steps .icon h3{
+    width: 50px;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background: #33ddb3;
+    border: 10px solid #33ddb3;
+    box-shadow: 0 0 50px #33ddb3;
+}
+
+.steps .tittle{
+    margin: 20px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.steps .text{
+    margin-top: 20px;
+}
+
+
+
+.info{
+    position: relative;
+    height: 400px;
+    padding: 40px 0;
+}
+
+.info .slogan{
+    top: 100px;
+    left: auto;
+    right: 100px;
+}
+
+.info  .img-box{
+    top: 50px;
+    right: auto;
+    left: -10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0 0 0 /.4);
+}
+
+.first-info .img-box{
+    left: -10%;
+    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/model-x.jpg);
+}
+
+.second-info .slogan{
+    right: auto;
+    left: 50px;
+}
+
+.second-info .img-box{
+    right: -10%;
+    left: auto;
+    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/model-y.jpg);
+}
+
+
+
+.banner-img{
+    height: 400px;
+    background: #ccc;
+    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/solar-roof.jpg);
+    background-position: center;
+    background-size: 100%;
+    box-shadow: inset 30px 30px 100px rgba(0 0 0 /.8);
+}
+
+.parallax{
+    background-position: center 0;
+}

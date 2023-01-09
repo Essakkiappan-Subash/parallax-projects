@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax-scrolling-4</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+    <hr>
+
+    <style>
+        body{
+            margin: 0;
+            height: 3000px;
+        }
+
+        .container{
+            height: 100%;
+        }
+
+        .box{
+            width: 200px; height: 200px;
+            background-color: rgba(137, 43, 226, 0.2);
+            border: 10px solid rgba(137, 43, 226, 0.02);
+            position: absolute;
+            top: 0; left: -141px;
+            /* left: -110px; */
+            transform: translate(0, 40px) rotate(45deg);
+        }
+        .box2{
+            width: 180px; height: 180px;
+            background-color: rgba(137, 43, 226, 0.1);
+            border: 10px solid rgba(137, 43, 226, 0.02);
+            position: absolute;
+            top: 0; left: -141px;
+            /* left: -110px; */
+            transform: translate(0, 50px) rotate(0deg);
+        }
+    </style>
+    
+    <script>
+        const box = document.querySelector('.box');
+        const box2 = document.querySelector('.box2');
+
+        let initialTraslation = 40;
+        let initialRotation = 45;
+
+        let initialTraslation2 = 50;
+        let initialRotation2 = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY / 2;
+            const scrollTop2 = scrollTop / 3;
+
+            box.style.transform = `translate(0, ${initialTraslation + window.scrollY/1.1}px) rotate(${initialRotation + scrollTop/4}deg)`;
+            box2.style.transform = `translate(0, ${initialTraslation2 + window.scrollY}px) rotate(${initialRotation2 + scrollTop2/4}deg)`;
+        })
+
+        // const box2 = document.querySelector('.box2');
+
+        // let initialTraslation2 = 40;
+        // let initialRotation2 = 0;
+
+        // window.addEventListener('scroll', () => {
+        //     const scrollTop2 = window.scrollY;
+
+        //     box2.style.transform = `translate(0, ${initialTraslation2 + scrollTop2}px) rotate(${initialRotation2 + scrollTop2}deg)`;
+        // })
+    </script>
+
+</body>
+</html>

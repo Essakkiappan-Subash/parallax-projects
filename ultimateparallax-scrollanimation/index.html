@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Parallax and Scroll Animation effects | using HTML, CSS, JS</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+     <div class="container">
+        <header>
+            <nav>
+                <div class="logo">L <span>O</span> G <span>O</span></div>
+                <div class="top-links">
+                    <a href="#" class="top-link">About</a>
+                    <a href="#" class="top-link">Services</a>
+                    <a href="#" class="top-link">Contact</a>
+                </div>
+            </nav>
+            <div class="slogan">
+                <div class="tittle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="sub-tittle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                     dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                </div>
+                <div>
+                    <div class="cta">
+                        <button>Join Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-box"></div>
+            <div class="img-box"></div>
+        </header>
+
+        <main>
+            <section class="steps-container">
+                <div class="steps">
+                    <div>
+                        <div class="icon">
+                            <h3>tcs</h3>
+                        </div>
+                        <div class="tittle">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                            dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="icon">
+                            <h3>ZOGO</h3>
+                        </div>
+                        <div class="tittle">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                            dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="icon">
+                            <h3>HCL</h3>
+                        </div>
+                        <div class="tittle">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                            dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info first-info">
+                <div class="slogan">
+                    <div class="tittle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="sub-tittle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                         dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                    </div>
+                </div>
+                <div class="img-box floating"></div>
+            </section>
+
+            <section class="info second-info">
+                <div class="slogan">
+                    <div class="tittle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="sub-tittle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo voluptas delectus enim nulla modi,
+                         dicta beatae quis odit vitae iste eius est ipsum assumenda. Minus dolor molestiae ut pariatur.
+                    </div>
+                </div>
+                <div class="img-box floating"></div>
+            </section>
+
+            <div class="banner-img"></div>
+        </main>
+     </div>
+    
+     <script src="./assets/js/scroll-animation.js"></script>
+     <!-- <script>
+        window.addEventListener('scroll', () => {
+            const scrollTap = window.scrollY;
+            
+            parallaxes.forEach(parallax => {
+                if ((scrollTop = window.innerHeight / 2) > parallax.offsetTop) {
+                    // const yPosition = 0;
+                    const oldMin = (parallax.offsetTop < window.innerHeight / 2) ? parallax.offsetTop : parallax.offsetTop - window.innerHeight / 2;
+                    const oldMax = oldMin - parallax.offsetHeight;
+                    const yPosition = calculateRangeValue(oldMin, oldMax, -350, -250, scrollTap);
+                    parallax.style.backgroundPosition = `center ${yPosition}px`;
+                }
+            });
+        });
+     </script> -->
+</body>
+</html>
