@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax-scrolling-2</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <main>
+        <section class="parallax"></section>
+        <section>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam assumenda possimus sequi 
+                cum? Repellat aspernatur nemo, sunt autem laborum consequuntur. Id consequatur ex tenetur dolores 
+                fuga maxime error porro!
+            </div>
+        </section>
+        <section class="parallax"></section>
+        <section>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam assumenda possimus sequi 
+                cum? Repellat aspernatur nemo, sunt autem laborum consequuntur. Id consequatur ex tenetur dolores 
+                fuga maxime error porro!
+            </div>
+        </section>
+        <section>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam assumenda possimus sequi 
+                cum? Repellat aspernatur nemo, sunt autem laborum consequuntur. Id consequatur ex tenetur dolores 
+                fuga maxime error porro!
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/parallax.js"></script>
+    <!-- <script>
+        const parallaxes = document.querySelectorAll('.parallax');
+
+                const calculateRangeValue = (oldMin, oldMax, newMin, newMax, oldValue) => {
+            const oldRange = oldMax - oldMin;
+            const newRange = newMax - newMin;
+
+            return ((oldValue - oldMin) * (newRange/oldRange)) + newMin;
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollTap = window.scrollY;
+            
+            parallaxes.forEach(parallax => {
+                if ((scrollTap + window.innerHeight / 2) > parallax.offsetTop) {
+                    const oldMin = (parallax.offsetTop < window.innerHeight / 2) ?  parallax.offsetTop : parallax.offsetTop - window.innerHeight / 2;
+                    const oldMax = oldMin - parallax.offsetHeight;
+                    const yPosition = calculateRangeValue(oldMin, oldMax, -350, -250, scrollTap);
+                    parallax.style.backgroundPosition = `center ${yPosition}px`;
+                }
+            });
+        }); 
+    </script> -->
+                <!-- const oldMin = (parallax.offsetTop < window.innerHeight / 2) ? parallax.offsetTop : parallax.offsetTop - window.innerHeight / 2; -->
+    
+</body>
+</html>
