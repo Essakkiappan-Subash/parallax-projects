@@ -82,8 +82,8 @@ header .top-link{
 }
 
 .floating-box{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     background: #33ddb320;
     border: 10px solid #33ddb3;
@@ -92,6 +92,15 @@ header .top-link{
     box-shadow: 0 0 100px #33ddb3;
     left: -100px;
     transform: translateY(40px) rotate(45deg);
+}
+
+.horizantal-floating-box{
+    width: 200px; height: 200px;
+    background-color: #33ddb333;
+    box-shadow: inset 0 0 100px #33ddb333;
+    position: absolute;
+    left: -100px;
+    transform: translate(0, 40px) rotate(45deg);
 }
 
 .img-box{
@@ -132,6 +141,7 @@ header .img-box{
 .steps-container{
     height: 300px;
     padding-top: 140px;
+    overflow: hidden;
 }
 
 .steps{
@@ -171,6 +181,16 @@ header .img-box{
 
 .steps .text{
     margin-top: 20px;
+}
+
+.fast-floating-box{
+    width: 150px; height: 150px;
+    background-color: #33ddb333;
+    box-shadow: inset 0 0 100px #33ddb333;
+    position: absolute;
+    right: 100px;
+    transform: translate(44px, 225px) rotate(45deg);
+    overflow: hidden;
 }
 
 

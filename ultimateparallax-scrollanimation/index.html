@@ -36,6 +36,7 @@
             </div>
 
             <div class="floating-box"></div>
+            <div class="horizantal-floating-box"></div>
             <div class="img-box"></div>
         </header>
 
@@ -81,6 +82,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="fast-floating-box"></div>
             </section>
 
             <section class="info first-info">
@@ -114,20 +116,6 @@
      </div>
     
      <script src="./assets/js/scroll-animation.js"></script>
-     <!-- <script>
-        window.addEventListener('scroll', () => {
-            const scrollTap = window.scrollY;
-            
-            parallaxes.forEach(parallax => {
-                if ((scrollTop = window.innerHeight / 2) > parallax.offsetTop) {
-                    // const yPosition = 0;
-                    const oldMin = (parallax.offsetTop < window.innerHeight / 2) ? parallax.offsetTop : parallax.offsetTop - window.innerHeight / 2;
-                    const oldMax = oldMin - parallax.offsetHeight;
-                    const yPosition = calculateRangeValue(oldMin, oldMax, -350, -250, scrollTap);
-                    parallax.style.backgroundPosition = `center ${yPosition}px`;
-                }
-            });
-        });
-     </script> -->
+     <script src="./assets/js/horizantal-floating-box.js"></script>
 </body>
 </html>
