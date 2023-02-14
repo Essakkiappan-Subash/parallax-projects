@@ -38,13 +38,13 @@ header .top-link{
     width: 40%;
     top: 200px;
     left: 100px;
-    transform: translateY(100%);
+    transform: translateY(100px);
     opacity: 0;
 }
 
 .slogan.textanim{
     animation: text-animation 1s;
-    /* animation-delay: 0.4s; */
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
@@ -133,7 +133,7 @@ header .top-link{
 }
 
 header .img-box{
-    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/TESLA%20S.jpg);
+    background-image: url(../img/TESLA\ S.jpg);
 }
 
 
@@ -188,9 +188,9 @@ header .img-box{
     background-color: #33ddb333;
     box-shadow: inset 0 0 100px #33ddb333;
     position: absolute;
-    right: 100px;
+    right: -50px;
     transform: translate(44px, 225px) rotate(45deg);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -199,6 +199,7 @@ header .img-box{
     position: relative;
     height: 400px;
     padding: 40px 0;
+    /* overflow: hidden; */
 }
 
 .info .slogan{
@@ -216,8 +217,9 @@ header .img-box{
 }
 
 .first-info .img-box{
+    top: 100px;
     left: -10%;
-    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/model-x.jpg);
+    background-image: url(../img/model-x.jpg);
 }
 
 .second-info .slogan{
@@ -228,20 +230,24 @@ header .img-box{
 .second-info .img-box{
     right: -10%;
     left: auto;
-    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/model-y.jpg);
+    top: 100px;
+    background-image: url(../img/model-y.jpg);
 }
 
 
 
 .banner-img{
     height: 400px;
+    margin-bottom: 40px;
     background: #ccc;
-    background-image: url(file:///F:/Web%20Programming/Web%20Project/Udemy%20Projects/Tesal%20Clone%20Wbesite%20-%20Vikash%20CV%20Project/assets/Img/section-img/solar-roof.jpg);
+    background-image: url(../img/model-x.jpg);
     background-position: center;
     background-size: 100%;
-    box-shadow: inset 30px 30px 100px rgba(0 0 0 /.8);
+    box-shadow: inset 30px 30px 100px rgba(0 0 0 /.8),
+    0px -10px 0px #33ddb399, 0px -20px 0px #33ddb366, 0px -30px 0px #33ddb333, 0px -40px 0px #33ddb311, 0px -40px 50px #33ddb388,
+    0px 10px 0px #33ddb399, 0px 20px 0px #33ddb366, 0px 30px 0px #33ddb333, 0px 40px 0px #33ddb311, 0px 40px 50px #33ddb388;
 }
 
-.parallax{
-    background-position: center 0;
+.banner-img.parallax{
+    background-position: center -280px;
 }
